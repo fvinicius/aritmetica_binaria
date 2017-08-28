@@ -119,7 +119,7 @@ public class Janela extends javax.swing.JDialog {
     private void enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterActionPerformed
         if (this.opcoes.getSelectedIndex() == 0) {    //SOMA
             System.out.println("SOMA");
-            
+            result = "";
             i = valor1.getText().length()-1;
             while(i>=0){
                 A = Character.getNumericValue(valor1.getText().charAt(i));
@@ -145,6 +145,7 @@ public class Janela extends javax.swing.JDialog {
             
         } else {                                      //SUBTRAÇÃO
             System.out.println("SUBTRAÇÃO");
+            result = "";
             R = 0;
             i = valor1.getText().length()-1;
             while(i>=0){
